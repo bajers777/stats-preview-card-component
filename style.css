@@ -1,0 +1,117 @@
+html{
+    font-size: 15px;
+}
+body{
+    margin: 0;
+    font-family: 'Lexend Deca', sans-serif;
+}
+.card{
+    background-color: hsl(233, 47%, 7%);
+}
+.wrapper-image{
+    background-color: hsl(277, 64%, 61%);
+}
+#wrapper-mobile-img, #wrapper-desktop-img{
+    display: block;
+    width: 100%;
+    height: 100%;   
+    mix-blend-mode: multiply;
+}
+.wrapper-text {
+    background-color: hsl(244, 38%, 16%);
+    color: hsla(0, 0%, 100%, 0.75);
+}
+.wrapper-text ul>*>p:last-child{
+    color: hsla(0, 0%, 100%, 0.6);
+    text-transform: uppercase;
+    font-size: 0.75rem;
+}
+.wrapper-text ul{
+    list-style: none;
+    padding: 0;
+}
+.wrapper-text ul>*>p:first-child{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: hsl(0, 0%, 100%);
+    margin-bottom: -0.5rem;
+}
+
+.wrapper-text span{
+    color: hsl(277, 64%, 61%);
+}
+.wrapper h3{
+    color: hsl(0, 0%, 100%);
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+}
+.wrapper p{
+    line-height: 1.5rem;
+}
+@media only screen and (max-width: 1439px){
+
+.wrapper{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.wrapper-image{
+    width: 100%;
+    background-color: hsl(277, 64%, 61%);
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+#wrapper-desktop-img{
+    display: none;
+}
+.wrapper-text {
+    width: 100%;
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+.text-container{
+    padding: 3rem;
+}
+}
+@media screen and (min-width: 1440px){
+    .card{
+        padding: 10rem;
+    }
+    .wrapper{
+        display: flex;
+        flex-flow: row-reverse;
+        width: 100%;
+        height: auto;
+    }
+    .wrapper-text{
+        display: flex;
+        flex-flow: column;
+        flex: 1;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0.5rem 0 0 0.5rem;
+        padding: 1rem;
+    }
+    .text-container{
+        padding: 3rem;
+        margin-right: 6rem;
+    }
+    .text-container ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .wrapper-image{
+        flex: 1;
+        border-radius: 0 0.5rem 0.5rem 0;
+    }
+    #wrapper-mobile-img{
+        display: none;
+    }
+}
